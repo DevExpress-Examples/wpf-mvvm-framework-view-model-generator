@@ -1,0 +1,26 @@
+﻿<UserControl x:Class="ViewModelGeneratorSample.CommandsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+             xmlns:local="clr-namespace:ViewModelGeneratorSample">
+
+    <UserControl.DataContext>
+        <local:CommandsViewModel />
+    </UserControl.DataContext>
+
+    <dxlc:LayoutControl VerticalAlignment="Top" Orientation="Vertical">
+        <dxlc:LayoutGroup Header="Command without parameter"
+                          Orientation="Vertical"
+                          View="GroupBox">
+            <CheckBox Content="Can Save" IsChecked="{Binding CanExecuteSaveCommand}" />
+            <Button Command="{Binding SaveCommand}">Save</Button>
+        </dxlc:LayoutGroup>
+        <dxlc:LayoutGroup Header="Command with parameter"
+                          Orientation="Vertical"
+                          View="GroupBox">
+            <dxe:TextEdit NullText="Enter file name" Text="{Binding FileName, UpdateSourceTrigger=PropertyChanged}" />
+            <Button Command="{Binding OpenCommand}" CommandParameter="{Binding FileName}">Open</Button>
+        </dxlc:LayoutGroup>
+    </dxlc:LayoutControl>
+</UserControl>

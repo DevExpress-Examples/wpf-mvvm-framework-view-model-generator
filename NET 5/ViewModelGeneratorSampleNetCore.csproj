@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+
+    <!-- IMPORTANT PROPERTIES -->
+    <LangVersion>9</LangVersion>
+    <IncludePackageReferencesDuringMarkupCompilation>true</IncludePackageReferencesDuringMarkupCompilation>
+    <!-- ==================== -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DevExpress.Mvvm.CodeGenerators" Version="21.1.0" />
+    <PackageReference Include="DevExpress.Wpf" Version="21.1.2-pre-21097" />
+    <PackageReference Include="DevExpress.Wpf.Themes.Office2019White" Version="21.1.2-pre-21097" />
+  </ItemGroup>
+</Project>

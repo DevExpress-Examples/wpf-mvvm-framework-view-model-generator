@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="ViewModelGeneratorSample.AsyncCommandsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
+             xmlns:local="clr-namespace:ViewModelGeneratorSample">
+
+    <UserControl.DataContext>
+        <local:AsyncCommandsViewModel />
+    </UserControl.DataContext>
+
+    <dxlc:LayoutControl VerticalAlignment="Top" Orientation="Vertical">
+        <ProgressBar Height="20"
+                     Value="{Binding Progress}"
+                     Maximum="100"
+                     Minimum="0" />
+        <Button Command="{Binding CalculateAsyncCommand}"
+                Content="Calculate"
+                FontWeight="Bold" />
+        <Button Command="{Binding CalculateAsyncCommand.CancelCommand}" Content="Cancel" />
+    </dxlc:LayoutControl>
+</UserControl>
