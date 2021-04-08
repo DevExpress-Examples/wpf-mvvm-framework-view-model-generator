@@ -5,7 +5,7 @@ namespace ViewModelGeneratorSample {
     public partial class PropertiesViewModel {
         [GenerateProperty]
         string _UserName;
-        protected void OnUserNameChanged(string oldValue) => ChangedStatus = string.Format("Old value: '{0}' New value: '{1}'", oldValue, UserName);
+        void OnUserNameChanged(string oldValue) => ChangedStatus = string.Format("Old value: '{0}' New value: '{1}'", oldValue, UserName);
 
         [GenerateProperty(SetterAccessModifier = AccessModifier.Private)]
         string _ChangedStatus;

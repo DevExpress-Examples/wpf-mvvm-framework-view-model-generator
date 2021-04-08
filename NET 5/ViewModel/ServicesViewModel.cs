@@ -4,10 +4,10 @@ using DevExpress.Mvvm.CodeGenerators;
 namespace ViewModelGeneratorSample {
     [GenerateViewModel(ImplementISupportServices = true)]
     public partial class ServicesViewModel {
+        IMessageBoxService MessageBoxService { get => ServiceContainer.GetService<IMessageBoxService>(); }
+        
         [GenerateProperty]
         string _Message;
-
-        IMessageBoxService MessageBoxService { get => ServiceContainer.GetService<IMessageBoxService>(); }
 
         [GenerateCommand]
         void ShowMessage() => MessageBoxService.ShowMessage("Your message: " + Message, "Login", MessageButton.OK, MessageIcon.Information);

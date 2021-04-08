@@ -4,12 +4,7 @@
              xmlns:dx="http://schemas.devexpress.com/winfx/2008/xaml/core"
              xmlns:dxe="http://schemas.devexpress.com/winfx/2008/xaml/editors"
              xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
-             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm"
-             xmlns:local="clr-namespace:ViewModelGeneratorSample">
-
-    <UserControl.DataContext>
-        <local:ServicesViewModel />
-    </UserControl.DataContext>
+             xmlns:dxmvvm="http://schemas.devexpress.com/winfx/2008/xaml/mvvm">
 
     <dxmvvm:Interaction.Behaviors>
         <dx:DXMessageBoxService />

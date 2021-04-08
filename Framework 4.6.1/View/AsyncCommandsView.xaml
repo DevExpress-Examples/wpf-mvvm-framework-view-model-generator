@@ -1,12 +1,7 @@
 ﻿<UserControl x:Class="ViewModelGeneratorSample.AsyncCommandsView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"
-             xmlns:local="clr-namespace:ViewModelGeneratorSample">
-
-    <UserControl.DataContext>
-        <local:AsyncCommandsViewModel />
-    </UserControl.DataContext>
+             xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol">
 
     <dxlc:LayoutControl VerticalAlignment="Top" Orientation="Vertical">
         <ProgressBar Height="20"

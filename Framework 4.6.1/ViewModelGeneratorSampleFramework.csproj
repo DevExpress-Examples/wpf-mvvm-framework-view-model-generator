@@ -67,6 +67,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Common\AppModules.cs" />
+    <Compile Include="Common\NavigationItem.cs" />
+    <Compile Include="Common\Regions.cs" />
     <Compile Include="ViewModel\AsyncCommandsViewModel.cs" />
     <Compile Include="ViewModel\CommandsViewModel.cs" />
     <Compile Include="ViewModel\DataErrorInfoViewModel.cs" />
@@ -81,6 +84,9 @@
     </Compile>
     <Compile Include="View\DataErrorInfoView.xaml.cs">
       <DependentUpon>DataErrorInfoView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\NavigationView.xaml.cs">
+      <DependentUpon>NavigationView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\LoginView.xaml.cs">
       <DependentUpon>LoginView.xaml</DependentUpon>
@@ -112,6 +118,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="View\DataErrorInfoView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\NavigationView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

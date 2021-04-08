@@ -6,9 +6,8 @@ using System.Windows;
 namespace ViewModelGeneratorSample {
     [GenerateViewModel(ImplementIDataErrorInfo = true)]
     public partial class DataErrorInfoViewModel {
-        [Required(ErrorMessage = "Please enter the user name.")]
-        [StringLength(100, MinimumLength = 5)]
         [GenerateProperty]
+        [Required(ErrorMessage = "Please enter the user name."), StringLength(100, MinimumLength = 5)]
         string _UserName;
 
         [GenerateCommand]
