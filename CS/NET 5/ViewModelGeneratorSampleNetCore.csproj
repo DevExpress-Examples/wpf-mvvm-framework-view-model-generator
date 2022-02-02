@@ -10,7 +10,7 @@
     <!-- ==================== -->
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Mvvm.CodeGenerators" Version="21.1.1" />
+    <PackageReference Include="DevExpress.Mvvm.CodeGenerators" Version="21.2.2" />
     <PackageReference Include="DevExpress.Wpf" Version="21.1.6" />
     <PackageReference Include="DevExpress.Wpf.Themes.Office2019White" Version="21.1.6" />
   </ItemGroup>

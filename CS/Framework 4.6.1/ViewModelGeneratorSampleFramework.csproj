@@ -163,7 +163,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Analyzer Include="DevExpress.Mvvm.CodeGenerators.21.2.1.1.dll" />
+    <Analyzer Include="DevExpress.Mvvm.CodeGenerators.21.2.2.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
