@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
     <!-- IMPORTANT PROPERTIES -->
@@ -14,4 +14,13 @@
     <PackageReference Include="DevExpress.Wpf" Version="21.1.6" />
     <PackageReference Include="DevExpress.Wpf.Themes.Office2019White" Version="21.1.6" />
   </ItemGroup>
+
+  <Target Name="RemoveDuplicateAnalyzers" BeforeTargets="CoreCompile">
+	  <!-- Workaround https://github.com/dotnet/wpf/issues/6792 -->
+	  <ItemGroup>
+		  <FilteredAnalyzer Include="@(Analyzer-&gt;Distinct())" />
+		  <Analyzer Remove="@(Analyzer)" />
+		  <Analyzer Include="@(FilteredAnalyzer)" />
+	  </ItemGroup>
+  </Target>
 </Project>
