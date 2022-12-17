@@ -1,7 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
     <!-- IMPORTANT PROPERTIES -->
@@ -11,16 +12,15 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="DevExpress.Mvvm.CodeGenerators" Version="22.1.1" />
-    <PackageReference Include="DevExpress.Wpf" Version="21.1.6" />
-    <PackageReference Include="DevExpress.Wpf.Themes.Office2019White" Version="21.1.6" />
+    <PackageReference Include="DevExpress.Wpf" Version="22.2.2-beta" />
+    <PackageReference Include="DevExpress.Wpf.Themes.Office2019White" Version="22.2.2-beta" />
   </ItemGroup>
-
   <Target Name="RemoveDuplicateAnalyzers" BeforeTargets="CoreCompile">
-	  <!-- Workaround https://github.com/dotnet/wpf/issues/6792 -->
-	  <ItemGroup>
-		  <FilteredAnalyzer Include="@(Analyzer-&gt;Distinct())" />
-		  <Analyzer Remove="@(Analyzer)" />
-		  <Analyzer Include="@(FilteredAnalyzer)" />
-	  </ItemGroup>
+    <!-- Workaround https://github.com/dotnet/wpf/issues/6792 -->
+    <ItemGroup>
+      <FilteredAnalyzer Include="@(Analyzer-&gt;Distinct())" />
+      <Analyzer Remove="@(Analyzer)" />
+      <Analyzer Include="@(FilteredAnalyzer)" />
+    </ItemGroup>
   </Target>
 </Project>
