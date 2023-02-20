@@ -11,8 +11,6 @@ This example demonstrates how to generate full-fledged View Models at compile ti
 
 Refer to the following topic for more information: [View Models Generated at Compile Time](https://docs.devexpress.com/WPF/402989/mvvm-framework/viewmodels/compile-time-generated-viewmodels).
 
-Due to issues that appear in the latest versions of Visual Studio 2022, we use a workaround described in the following support ticket to make this example compilable: [Code generators don't work after the .NET/Visual Studio upgrade](https://supportcenter.devexpress.com/ticket/details/t1102440/code-generators-don-t-work-after-the-net-visual-studio-upgrade).
-
 ## Files to Look At
 
 * [LoginViewModel.cs](./CS/NET%205/ViewModel/LoginViewModel.cs)
@@ -27,3 +25,4 @@ Due to issues that appear in the latest versions of Visual Studio 2022, we use a
 * [View Models Generated at Compile Time](https://docs.devexpress.com/WPF/402989/mvvm-framework/viewmodels/compile-time-generated-viewmodels)
 * [View Models](https://docs.devexpress.com/WPF/17439/mvvm-framework/viewmodels)
 * [MVVM Framework](https://docs.devexpress.com/WPF/15112/mvvm-framework)
+* [DevExpress.Mvvm.CodeGenerators](https://github.com/DevExpress/DevExpress.Mvvm.CodeGenerators)
