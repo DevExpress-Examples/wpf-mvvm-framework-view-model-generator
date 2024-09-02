@@ -38,15 +38,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.Desktop.v22.2" />
-    <Reference Include="DevExpress.Drawing.v22.2" />
-    <Reference Include="DevExpress.Data.v22.2" />
-    <Reference Include="DevExpress.Mvvm.v22.2" />
-    <Reference Include="DevExpress.Printing.v22.2.Core" />
-    <Reference Include="DevExpress.Xpf.Accordion.v22.2" />
-    <Reference Include="DevExpress.Xpf.Core.v22.2" />
-    <Reference Include="DevExpress.Xpf.LayoutControl.v22.2" />
-    <Reference Include="DevExpress.Xpf.Themes.Office2019White.v22.2" />
+    <Reference Include="DevExpress.Data.Desktop.v24.2" />
+    <Reference Include="DevExpress.Drawing.v24.2" />
+    <Reference Include="DevExpress.Data.v24.2" />
+    <Reference Include="DevExpress.Mvvm.v24.2" />
+    <Reference Include="DevExpress.Printing.v24.2.Core" />
+    <Reference Include="DevExpress.Xpf.Accordion.v24.2" />
+    <Reference Include="DevExpress.Xpf.Core.v24.2" />
+    <Reference Include="DevExpress.Xpf.LayoutControl.v24.2" />
+    <Reference Include="DevExpress.Xpf.Themes.Office2019White.v24.2" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Data" />
