@@ -28,7 +28,7 @@ Refer to the following topic for more information: [View Models Generated at Com
 * [MVVM Framework](https://docs.devexpress.com/WPF/15112/mvvm-framework)
 * [DevExpress.Mvvm.CodeGenerators](https://github.com/DevExpress/DevExpress.Mvvm.CodeGenerators)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-mvvm-framework-view-model-generator&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=wpf-mvvm-framework-view-model-generator&~~~was_helpful=no)
 
