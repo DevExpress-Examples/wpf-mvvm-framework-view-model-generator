@@ -2,7 +2,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
+    <TargetFramework>net10.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
     <!-- IMPORTANT PROPERTIES -->
@@ -11,8 +11,8 @@
     <!-- ==================== -->
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="DevExpress.Mvvm.CodeGenerators" Version="22.1.1" />
-    <PackageReference Include="DevExpress.Wpf" Version="24.2.*-*" />
-    <PackageReference Include="DevExpress.Wpf.Themes.Office2019White" Version="24.2.*-*" />
+    <PackageReference Include="DevExpress.Mvvm.CodeGenerators" Version="26.1.5" />
+    <PackageReference Include="DevExpress.Wpf" Version="26.1.*-*" />
+    <PackageReference Include="DevExpress.Wpf.Themes.Office2019White" Version="26.1.*-*" />
   </ItemGroup>
 </Project>
